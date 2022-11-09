@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Peter_Siroma_form</title>
+	<style>
+		tr{
+			background-color:gray;
+		}
+	</style>
+</head>
+<body>
+<table border="1" cellpadding="3" cellspacing="0">
+	<tr>
+		<td>Meno</td>
+		<td><form action="skript.php">
+			<input type="text" id="username" name="username"><br>
+		</form>	
+		</td>
+		<td>Heslo</td>
+		<td><input type="password" id="pwd" name="pwd"><br></td>
+	</tr>
+    <tr>
+    	<td>Odbor</td>
+    	<td><form action="skript.php">
+    		<input type="radio" id="tis" name="odbor" value="TIS">
+    		<label for="tis">TIS</label>
+    		<input type="radio" id="ele" name="odbor" value="ELE">
+    		<label for="ele">ELE</label>
+    	</form>	
+    	</td>
+    	<td>Trieda</td>
+    	<td><form action="/action_page.php">
+         
+    	<select name="tema">
+    		 <optgroup label="Prvy rocnik">
+							<option>1.A</option>
+							<option>1.B</option>
+							<option>1.C</option>
+							<option>1.D</option>
+						</optgroup>
+			<optgroup label="Druhy rocnik">
+				           <option>2.A</option>
+							<option>2.B</option>
+							<option>2.C</option>
+							<option>2.D</option>
+				
+			</optgroup>			
+						</select>	
+    	</form>	
+    	</td>
+    </tr>
+    <tr>
+    	<td>Volitelne predmety</td>
+    	<td colspan="3"><form action="skript.php">
+    		<input type="checkbox" id="predmet1" name="predmet1" value="INS">
+    		<label for="predmet1">INS</label>
+    		<input type="checkbox" id="predmet2" name="predmet2" value="CVM">
+    		<label for="predmet2">CVM</label>
+    		<input type="checkbox" id="predmet3" name="predmet3" value="CUJ">
+    		<label for="predmet3">CUJ</label>
+    		<input type="checkbox" id="predmet4" name="predmet4" value="PRA">
+    		<label for="predmet4">PRA</label>
+    	</form>
+    		
+    	</td>
+    </tr>
+    <tr>
+    	<td>Pripomienky</td>
+    	<td colspan="3">
+    		<textarea name="sprava" rows="5" cols="25">chcem viac volitelnych premetov</textarea>
+    	</td>
+    </tr>
+    <tr>
+    	<td colspan="2"><form action="skript.php">
+    		<fieldset>
+    			<input type="reset" name="vymazat">
+    			
+    		</fieldset>
+    		
+    	</form>
+    	</td>
+    	<td colspan="2"><form action="skript.php">
+    		<fieldset>
+    			
+    			<input type="submit" name="odoslat">
+    		</fieldset>
+    	</form>
+    </td>
+    </tr>
+</table>
+</body>
+</html>
